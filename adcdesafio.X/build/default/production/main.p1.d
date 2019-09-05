@@ -4,4 +4,5 @@
 timer0lib.h  \
 config_bits.h  \
 adclib.h  \
-configIO.h 
+configIO.h  \
+sevenSeg.h 

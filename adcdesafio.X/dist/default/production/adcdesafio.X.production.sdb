@@ -1,0 +1,345 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"11 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/adclib.c
+[v _adcConfig adcConfig `(v  1 e 1 0 ]
+"27
+[v _adcRead adcRead `(ui  1 e 2 0 ]
+"15 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c
+[v _setOutputA setOutputA `(v  1 e 1 0 ]
+"21
+[v _setOutputC setOutputC `(v  1 e 1 0 ]
+"27
+[v _setOutputE setOutputE `(v  1 e 1 0 ]
+"36
+[v _setInputA setInputA `(v  1 e 1 0 ]
+"52
+[v _output_lowA output_lowA `(v  1 e 1 0 ]
+"64
+[v _output_lowE output_lowE `(v  1 e 1 0 ]
+"68
+[v _output_highA output_highA `(v  1 e 1 0 ]
+"74
+[v _output_highC output_highC `(v  1 e 1 0 ]
+"77
+[v _output_highD output_highD `(v  1 e 1 0 ]
+"80
+[v _output_highE output_highE `(v  1 e 1 0 ]
+"13 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/timer0lib.c
+[v _configTimer0 configTimer0 `(v  1 e 1 0 ]
+"30
+[v _resetTimer0 resetTimer0 `(v  1 e 1 0 ]
+"33
+[v _enableTimer0ISR enableTimer0ISR `(v  1 e 1 0 ]
+"38
+[v _desableTimer0ISR desableTimer0ISR `(v  1 e 1 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"12 C:\Users\Aluno\Desktop\adcdesafio.X\main.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+"28
+[v _main main `(i  1 e 2 0 ]
+"13 C:\Users\Aluno\Desktop\adcdesafio.X\sevenSeg.c
+[v _printDigit1 printDigit1 `(v  1 e 1 0 ]
+"20
+[v _printDigit2 printDigit2 `(v  1 e 1 0 ]
+"26
+[v _printDigit3 printDigit3 `(v  1 e 1 0 ]
+"32
+[v _printDigit4 printDigit4 `(v  1 e 1 0 ]
+"38
+[v _configSevenSeg configSevenSeg `(v  1 e 1 0 ]
+"42
+[v _printDisplays printDisplays `(v  1 e 1 0 ]
+"2709 C:\Program Files (x86)\Microchip\xc8\v1.37\include\pic18f4550.h
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"3252
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"3369
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3501
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"3589
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3721
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"3778
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"3975
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"4196
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"4349
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4570
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"6887
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"6957
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"7047
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+"7171
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"7177
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"8443
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"8512
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"9287
+[v _ADON ADON `VEb  1 e 0 @32272 ]
+"9793
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"9809
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @32273 ]
+"9955
+[v _LATC7 LATC7 `VEb  1 e 0 @31839 ]
+"10175
+[v _PSA PSA `VEb  1 e 0 @32427 ]
+"10447
+[v _T0CS T0CS `VEb  1 e 0 @32429 ]
+"10449
+[v _T0IE T0IE `VEb  1 e 0 @32661 ]
+"10451
+[v _T0IF T0IF `VEb  1 e 0 @32658 ]
+"10509
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"10513
+[v _TMR0ON TMR0ON `VEb  1 e 0 @32431 ]
+"10697
+[v _VCFG0 VCFG0 `VEb  1 e 0 @32268 ]
+"10701
+[v _VCFG1 VCFG1 `VEb  1 e 0 @32269 ]
+"9 C:\Users\Aluno\Desktop\adcdesafio.X\main.c
+[v _contador contador `uc  1 e 1 0 ]
+"17 C:\Users\Aluno\Desktop\adcdesafio.X\sevenSeg.h
+[v _tabela tabela `C[10]uc  1 e 10 0 ]
+"28 C:\Users\Aluno\Desktop\adcdesafio.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"43
+[v main@valor valor `ui  1 a 2 33 ]
+"61
+} 0
+"21 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c
+[v _setOutputC setOutputC `(v  1 e 1 0 ]
+{
+[v setOutputC@outputs outputs `uc  1 a 1 wreg ]
+[v setOutputC@outputs outputs `uc  1 a 1 wreg ]
+[v setOutputC@outputs outputs `uc  1 a 1 14 ]
+"23
+} 0
+"36
+[v _setInputA setInputA `(v  1 e 1 0 ]
+{
+[v setInputA@inputs inputs `uc  1 a 1 wreg ]
+[v setInputA@inputs inputs `uc  1 a 1 wreg ]
+[v setInputA@inputs inputs `uc  1 a 1 14 ]
+"38
+} 0
+"30 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/timer0lib.c
+[v _resetTimer0 resetTimer0 `(v  1 e 1 0 ]
+{
+"32
+} 0
+"42 C:\Users\Aluno\Desktop\adcdesafio.X\sevenSeg.c
+[v _printDisplays printDisplays `(v  1 e 1 0 ]
+{
+[v printDisplays@valor valor `ui  1 p 2 26 ]
+"69
+} 0
+"32
+[v _printDigit4 printDigit4 `(v  1 e 1 0 ]
+{
+[v printDigit4@valor valor `uc  1 a 1 wreg ]
+[v printDigit4@valor valor `uc  1 a 1 wreg ]
+[v printDigit4@valor valor `uc  1 a 1 15 ]
+"37
+} 0
+"26
+[v _printDigit3 printDigit3 `(v  1 e 1 0 ]
+{
+[v printDigit3@valor valor `uc  1 a 1 wreg ]
+[v printDigit3@valor valor `uc  1 a 1 wreg ]
+[v printDigit3@valor valor `uc  1 a 1 15 ]
+"31
+} 0
+"80 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c
+[v _output_highE output_highE `(v  1 e 1 0 ]
+{
+[v output_highE@outputs outputs `uc  1 a 1 wreg ]
+[v output_highE@outputs outputs `uc  1 a 1 wreg ]
+[v output_highE@outputs outputs `uc  1 a 1 14 ]
+"82
+} 0
+"20 C:\Users\Aluno\Desktop\adcdesafio.X\sevenSeg.c
+[v _printDigit2 printDigit2 `(v  1 e 1 0 ]
+{
+[v printDigit2@valor valor `uc  1 a 1 wreg ]
+[v printDigit2@valor valor `uc  1 a 1 wreg ]
+[v printDigit2@valor valor `uc  1 a 1 15 ]
+"25
+} 0
+"13
+[v _printDigit1 printDigit1 `(v  1 e 1 0 ]
+{
+[v printDigit1@valor valor `uc  1 a 1 wreg ]
+[v printDigit1@valor valor `uc  1 a 1 wreg ]
+[v printDigit1@valor valor `uc  1 a 1 15 ]
+"19
+} 0
+"64 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c
+[v _output_lowE output_lowE `(v  1 e 1 0 ]
+{
+[v output_lowE@outputs outputs `uc  1 a 1 wreg ]
+[v output_lowE@outputs outputs `uc  1 a 1 wreg ]
+[v output_lowE@outputs outputs `uc  1 a 1 14 ]
+"66
+} 0
+"52
+[v _output_lowA output_lowA `(v  1 e 1 0 ]
+{
+[v output_lowA@outputs outputs `uc  1 a 1 wreg ]
+[v output_lowA@outputs outputs `uc  1 a 1 wreg ]
+[v output_lowA@outputs outputs `uc  1 a 1 14 ]
+"54
+} 0
+"68
+[v _output_highA output_highA `(v  1 e 1 0 ]
+{
+[v output_highA@outputs outputs `uc  1 a 1 wreg ]
+[v output_highA@outputs outputs `uc  1 a 1 wreg ]
+[v output_highA@outputs outputs `uc  1 a 1 14 ]
+"70
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 18 ]
+"8
+[v ___lwmod@dividend dividend `ui  1 p 2 14 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 16 ]
+"26
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 23 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 25 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 19 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 21 ]
+"31
+} 0
+"77 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c
+[v _output_highD output_highD `(v  1 e 1 0 ]
+{
+[v output_highD@outputs outputs `uc  1 a 1 wreg ]
+[v output_highD@outputs outputs `uc  1 a 1 wreg ]
+[v output_highD@outputs outputs `uc  1 a 1 14 ]
+"79
+} 0
+"74
+[v _output_highC output_highC `(v  1 e 1 0 ]
+{
+[v output_highC@outputs outputs `uc  1 a 1 wreg ]
+[v output_highC@outputs outputs `uc  1 a 1 wreg ]
+[v output_highC@outputs outputs `uc  1 a 1 14 ]
+"76
+} 0
+"33 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/timer0lib.c
+[v _enableTimer0ISR enableTimer0ISR `(v  1 e 1 0 ]
+{
+"37
+} 0
+"38
+[v _desableTimer0ISR desableTimer0ISR `(v  1 e 1 0 ]
+{
+"41
+} 0
+"13
+[v _configTimer0 configTimer0 `(v  1 e 1 0 ]
+{
+[v configTimer0@prescalerValue prescalerValue `uc  1 a 1 wreg ]
+[v configTimer0@prescalerValue prescalerValue `uc  1 a 1 wreg ]
+"15
+[v configTimer0@prescalerValue prescalerValue `uc  1 a 1 14 ]
+"22
+} 0
+"38 C:\Users\Aluno\Desktop\adcdesafio.X\sevenSeg.c
+[v _configSevenSeg configSevenSeg `(v  1 e 1 0 ]
+{
+"41
+} 0
+"27 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c
+[v _setOutputE setOutputE `(v  1 e 1 0 ]
+{
+[v setOutputE@outputs outputs `uc  1 a 1 wreg ]
+[v setOutputE@outputs outputs `uc  1 a 1 wreg ]
+[v setOutputE@outputs outputs `uc  1 a 1 14 ]
+"29
+} 0
+"15
+[v _setOutputA setOutputA `(v  1 e 1 0 ]
+{
+[v setOutputA@outputs outputs `uc  1 a 1 wreg ]
+[v setOutputA@outputs outputs `uc  1 a 1 wreg ]
+[v setOutputA@outputs outputs `uc  1 a 1 14 ]
+"17
+} 0
+"27 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/adclib.c
+[v _adcRead adcRead `(ui  1 e 2 0 ]
+{
+[v adcRead@channel channel `uc  1 a 1 wreg ]
+"28
+[v adcRead@returnValue returnValue `ui  1 a 2 20 ]
+"27
+[v adcRead@channel channel `uc  1 a 1 wreg ]
+[v adcRead@resultFormat resultFormat `uc  1 p 1 14 ]
+[v adcRead@channel channel `uc  1 a 1 22 ]
+"49
+} 0
+"11
+[v _adcConfig adcConfig `(v  1 e 1 0 ]
+{
+[v adcConfig@conversionRate conversionRate `uc  1 a 1 wreg ]
+[v adcConfig@conversionRate conversionRate `uc  1 a 1 wreg ]
+[v adcConfig@acqTime acqTime `uc  1 p 1 14 ]
+[v adcConfig@portConfig portConfig `uc  1 p 1 15 ]
+"13
+[v adcConfig@conversionRate conversionRate `uc  1 a 1 16 ]
+"26
+} 0
+"12 C:\Users\Aluno\Desktop\adcdesafio.X\main.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"26
+} 0

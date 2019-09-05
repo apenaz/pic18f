@@ -22,12 +22,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _GIE `Vb ~T0 @X0 0 e@32663 ]
 "48 adclib.h
 [v _adcConfig `(v ~T0 @X0 0 ef3`uc`uc`uc ]
-"40 main.c
-[v _configSevenSeg `(i ~T0 @X0 0 ef ]
+"29 sevenSeg.h
+[v _configSevenSeg `(v ~T0 @X0 0 ef ]
 "49 adclib.h
 [v _adcRead `(ui ~T0 @X0 0 ef2`uc`uc ]
-"47 main.c
-[v _printDisplays `(i ~T0 @X0 0 ef ]
+"34 sevenSeg.h
+[v _printDisplays `(v ~T0 @X0 0 ef1`ui ]
 "30 timer0lib.h
 [v _desableTimer0ISR `(v ~T0 @X0 0 ef ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
@@ -4130,137 +4130,181 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;timer0lib.h: 27: void resetTimer0(void);
 [; ;timer0lib.h: 29: void enableTimer0ISR(void);
 [; ;timer0lib.h: 30: void desableTimer0ISR(void);
-"8 main.c
+"17 sevenSeg.h
+[v _tabela `Cuc ~T0 @X0 -> 0 `x e ]
+[i _tabela
+:U ..
+"18
+-> -> 63 `i `uc
+"19
+-> -> 6 `i `uc
+"20
+-> -> 91 `i `uc
+"21
+-> -> 79 `i `uc
+"22
+-> -> 102 `i `uc
+"23
+-> -> 109 `i `uc
+"24
+-> -> 124 `i `uc
+"25
+-> -> 7 `i `uc
+"26
+-> -> 127 `i `uc
+"28
+-> -> 103 `i `uc
+..
+]
+[; ;sevenSeg.h: 17: const char tabela[] = {
+[; ;sevenSeg.h: 18: 0x3F,
+[; ;sevenSeg.h: 19: 0x06,
+[; ;sevenSeg.h: 20: 0x5B,
+[; ;sevenSeg.h: 21: 0x4F,
+[; ;sevenSeg.h: 22: 0x66,
+[; ;sevenSeg.h: 23: 0x6D,
+[; ;sevenSeg.h: 24: 0x7C,
+[; ;sevenSeg.h: 25: 0x07,
+[; ;sevenSeg.h: 26: 0x7F,
+[; ;sevenSeg.h: 27: 0x67
+[; ;sevenSeg.h: 28: };
+[; ;sevenSeg.h: 29: void configSevenSeg(void);
+[; ;sevenSeg.h: 30: void printDigit1(unsigned char valor);
+[; ;sevenSeg.h: 31: void printDigit2(unsigned char valor);
+[; ;sevenSeg.h: 32: void printDigit3(unsigned char valor);
+[; ;sevenSeg.h: 33: void printDigit4(unsigned char valor);
+[; ;sevenSeg.h: 34: void printDisplays(unsigned int valor);
+"9 main.c
 [v _contador `uc ~T0 @X0 1 e ]
 [i _contador
 -> -> 0 `i `uc
 ]
-[; ;main.c: 8: unsigned char contador = 0;
-[v F4335 `(v ~T0 @X0 1 tf ]
-"11
-[v _ISR `IF4335 ~T0 @X0 1 e ]
+[; ;main.c: 9: unsigned char contador = 0;
+[v F4348 `(v ~T0 @X0 1 tf ]
+"12
+[v _ISR `IF4348 ~T0 @X0 1 e ]
 {
-[; ;main.c: 11: void interrupt ISR() {
+[; ;main.c: 12: void interrupt ISR() {
 [e :U _ISR ]
 [f ]
-[; ;main.c: 12: if (T0IF) {
-"12
+[; ;main.c: 13: if (T0IF) {
+"13
 [e $ ! _T0IF 529  ]
 {
-[; ;main.c: 13: T0IF = 0;
-"13
-[e = _T0IF -> -> 0 `i `b ]
-[; ;main.c: 14: contador++;
+[; ;main.c: 14: T0IF = 0;
 "14
-[e ++ _contador -> -> 1 `i `uc ]
-[; ;main.c: 15: if (contador == 61) {
+[e = _T0IF -> -> 0 `i `b ]
+[; ;main.c: 15: contador++;
 "15
+[e ++ _contador -> -> 1 `i `uc ]
+[; ;main.c: 16: if (contador == 61) {
+"16
 [e $ ! == -> _contador `i -> 61 `i 530  ]
 {
-[; ;main.c: 16: LATC7 = ~LATC7;
-"16
-[e = _LATC7 -> ~ -> _LATC7 `ui `b ]
-[; ;main.c: 17: contador = 0x00;
+[; ;main.c: 17: LATC7 = ~LATC7;
 "17
-[e = _contador -> -> 0 `i `uc ]
+[e = _LATC7 -> ~ -> _LATC7 `ui `b ]
+[; ;main.c: 18: contador = 0x00;
 "18
+[e = _contador -> -> 0 `i `uc ]
+"19
 }
 [e :U 530 ]
-"24
+"25
 }
 [e :U 529 ]
-[; ;main.c: 18: }
-[; ;main.c: 24: }
+[; ;main.c: 19: }
 [; ;main.c: 25: }
-"25
+[; ;main.c: 26: }
+"26
 [e :UE 528 ]
 }
-"27
+"28
 [v _main `(i ~T0 @X0 1 ef ]
 {
-[; ;main.c: 27: int main() {
+[; ;main.c: 28: int main() {
 [e :U _main ]
 [f ]
-[; ;main.c: 29: setOutputC(0b10000000);
-"29
-[e ( _setOutputC (1 -> -> 128 `i `uc ]
-[; ;main.c: 30: output_highC(0b10000000);
+[; ;main.c: 30: setOutputC(0b10000000);
 "30
+[e ( _setOutputC (1 -> -> 128 `i `uc ]
+[; ;main.c: 31: output_highC(0b10000000);
+"31
 [e ( _output_highC (1 -> -> 128 `i `uc ]
-[; ;main.c: 32: setInputA(0b00000001);
-"32
-[e ( _setInputA (1 -> -> 1 `i `uc ]
-[; ;main.c: 33: output_highD(0b00000001|0b00000010|0b00000100|0b00001000|0b00010000|0b00100000|0b01000000|0b10000000);
+[; ;main.c: 33: setInputA(0b00000001);
 "33
-[e ( _output_highD (1 -> | | | | | | | -> 1 `i -> 2 `i -> 4 `i -> 8 `i -> 16 `i -> 32 `i -> 64 `i -> 128 `i `uc ]
-[; ;main.c: 34: configTimer0(0b00000110);
+[e ( _setInputA (1 -> -> 1 `i `uc ]
+[; ;main.c: 34: output_highD(0b00000001|0b00000010|0b00000100|0b00001000|0b00010000|0b00100000|0b01000000|0b10000000);
 "34
-[e ( _configTimer0 (1 -> -> 6 `i `uc ]
-[; ;main.c: 35: enableTimer0ISR();
+[e ( _output_highD (1 -> | | | | | | | -> 1 `i -> 2 `i -> 4 `i -> 8 `i -> 16 `i -> 32 `i -> 64 `i -> 128 `i `uc ]
+[; ;main.c: 35: configTimer0(0b00000110);
 "35
-[e ( _enableTimer0ISR ..  ]
-[; ;main.c: 36: resetTimer0();
+[e ( _configTimer0 (1 -> -> 6 `i `uc ]
+[; ;main.c: 36: enableTimer0ISR();
 "36
-[e ( _resetTimer0 ..  ]
-[; ;main.c: 37: GIE = 1;
+[e ( _enableTimer0ISR ..  ]
+[; ;main.c: 37: resetTimer0();
 "37
+[e ( _resetTimer0 ..  ]
+[; ;main.c: 38: GIE = 1;
+"38
 [e = _GIE -> -> 1 `i `b ]
-[; ;main.c: 39: adcConfig(0b00000001, 0b00011000, 0b00000000);
-"39
-[e ( _adcConfig (3 , , -> -> 1 `i `uc -> -> 24 `i `uc -> -> 0 `i `uc ]
-[; ;main.c: 40: configSevenSeg();
+[; ;main.c: 40: adcConfig(0b00000001, 0b00011000, 0b00000000);
 "40
+[e ( _adcConfig (3 , , -> -> 1 `i `uc -> -> 24 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 41: configSevenSeg();
+"41
 [e ( _configSevenSeg ..  ]
-"42
-[v _valor `ui ~T0 @X0 1 a ]
-[; ;main.c: 42: unsigned int valor = 0;
-[e = _valor -> -> 0 `i `ui ]
-[; ;main.c: 43: while (1) {
 "43
+[v _valor `ui ~T0 @X0 1 a ]
+[; ;main.c: 43: unsigned int valor = 0;
+[e = _valor -> -> 0 `i `ui ]
+[; ;main.c: 44: while (1) {
+"44
 [e :U 533 ]
 {
-[; ;main.c: 45: valor = adcRead(0,0b10000000);
-"45
+[; ;main.c: 46: valor = adcRead(0,0b10000000);
+"46
 [e = _valor ( _adcRead (2 , -> -> 0 `i `uc -> -> 128 `i `uc ]
-[; ;main.c: 47: printDisplays(valor);
-"47
-[e ( _printDisplays _valor ]
-[; ;main.c: 48: if(valor > 512){
+[; ;main.c: 48: printDisplays(valor);
 "48
+[e ( _printDisplays (1 _valor ]
+[; ;main.c: 49: if(valor > 512){
+"49
 [e $ ! > _valor -> -> 512 `i `ui 535  ]
 {
-[; ;main.c: 49: enableTimer0ISR();
-"49
-[e ( _enableTimer0ISR ..  ]
+[; ;main.c: 50: enableTimer0ISR();
 "50
-}
-[; ;main.c: 50: }
-[e $U 536  ]
+[e ( _enableTimer0ISR ..  ]
 "51
-[e :U 535 ]
-[; ;main.c: 51: else{
-{
-[; ;main.c: 52: desableTimer0ISR();
+}
+[; ;main.c: 51: }
+[e $U 536  ]
 "52
-[e ( _desableTimer0ISR ..  ]
-[; ;main.c: 53: output_highC(0b10000000);
+[e :U 535 ]
+[; ;main.c: 52: else{
+{
+[; ;main.c: 53: desableTimer0ISR();
 "53
-[e ( _output_highC (1 -> -> 128 `i `uc ]
+[e ( _desableTimer0ISR ..  ]
+[; ;main.c: 54: output_highC(0b10000000);
 "54
+[e ( _output_highC (1 -> -> 128 `i `uc ]
+"55
 }
 [e :U 536 ]
-"56
+"57
 }
 [e :U 532 ]
-"43
+"44
 [e $U 533  ]
 [e :U 534 ]
-[; ;main.c: 54: }
-[; ;main.c: 56: }
-[; ;main.c: 57: return;
-"57
+[; ;main.c: 55: }
+[; ;main.c: 57: }
+[; ;main.c: 58: return;
+"58
 [e $UE 531  ]
-[; ;main.c: 60: }
-"60
+[; ;main.c: 61: }
+"61
 [e :UE 531 ]
 }

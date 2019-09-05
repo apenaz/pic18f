@@ -3,6 +3,7 @@
 #include "config_bits.h"
 #include "configIO.h"
 #include "timer0lib.h"
+#include "sevenSeg.h"
 
 #define limite 512
 unsigned char contador = 0;
