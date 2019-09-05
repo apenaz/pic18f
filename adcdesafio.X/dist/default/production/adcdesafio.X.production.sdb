@@ -11,6 +11,8 @@
 [v _setOutputA setOutputA `(v  1 e 1 0 ]
 "21
 [v _setOutputC setOutputC `(v  1 e 1 0 ]
+"24
+[v _setOutputD setOutputD `(v  1 e 1 0 ]
 "27
 [v _setOutputE setOutputE `(v  1 e 1 0 ]
 "36
@@ -142,11 +144,19 @@
 "28 C:\Users\Aluno\Desktop\adcdesafio.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"43
+"44
 [v main@valor valor `ui  1 a 2 33 ]
-"61
+"62
 } 0
-"21 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c
+"24 C:\Users\Aluno/Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c
+[v _setOutputD setOutputD `(v  1 e 1 0 ]
+{
+[v setOutputD@outputs outputs `uc  1 a 1 wreg ]
+[v setOutputD@outputs outputs `uc  1 a 1 wreg ]
+[v setOutputD@outputs outputs `uc  1 a 1 14 ]
+"26
+} 0
+"21
 [v _setOutputC setOutputC `(v  1 e 1 0 ]
 {
 [v setOutputC@outputs outputs `uc  1 a 1 wreg ]

@@ -31,6 +31,7 @@ int main() {
     output_highC(PIN_C7);
     // portD as output for display controller
     setInputA(PIN_A0);
+    setOutputD(PIN_D0|PIN_D1|PIN_D2|PIN_D3|PIN_D4|PIN_D5|PIN_D6|PIN_D7);
     output_highD(PIN_D0|PIN_D1|PIN_D2|PIN_D3|PIN_D4|PIN_D5|PIN_D6|PIN_D7);
     configTimer0(PRESCALER128);
     enableTimer0ISR();

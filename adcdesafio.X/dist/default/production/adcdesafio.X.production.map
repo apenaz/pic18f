@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.37\dat\en_msgs.txt -cs \
   -h+dist/default/production\adcdesafio.X.production.sym \
   --cmf=dist/default/production\adcdesafio.X.production.cmf -z -Q18F4550 \
-  -oC:\Users\Aluno\AppData\Local\Temp\s36k.2 \
+  -oC:\Users\Aluno\AppData\Local\Temp\s44g.2 \
   -Mdist/default/production/adcdesafio.X.production.map -E1 -ver=XC8 \
   -ASTACK=060h-07ffh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0800h-08FFhx120 -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh \
@@ -22,7 +22,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Aluno\AppData\Local\Temp\s36k.obj \
+  C:\Users\Aluno\AppData\Local\Temp\s44g.obj \
   dist/default/production\adcdesafio.X.production.obj 
 
 Object code version is 3.11
@@ -35,7 +35,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Aluno\AppData\Local\Temp\s36k.obj
+C:\Users\Aluno\AppData\Local\Temp\s44g.obj
                 end_init                             16       16        4        4       0
                 reset_vec                             0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
@@ -45,34 +45,35 @@ dist/default/production\adcdesafio.X.production.obj
                 temp                                 25       25        1        1       1
                 smallconst                          800      800        C      400       0
                 intcode_body                        AE2      AE2       8C      406       0
-                text24                              D2E      D2E       20      406       0
-                text23                              A4C      A4C       96      406       0
-                text22                              DB8      DB8        A      406       0
-                text21                              DAE      DAE        A      406       0
-                text20                              D78      D78        E      406       0
-                text19                              D4E      D4E       16      406       0
-                text18                              DF0      DF0        4      406       0
-                text17                              DEA      DEA        6      406       0
-                text16                              DE2      DE2        8      406       0
-                text15                              DDA      DDA        8      406       0
-                text14                              BEA      BEA       52      406       0
-                text13                              C3C      C3C       42      406       0
-                text12                              DD2      DD2        8      406       0
-                text11                              DA4      DA4        A      406       0
-                text10                              D9A      D9A        A      406       0
-                text9                               D02      D02       2C      406       0
-                text8                               CD6      CD6       2C      406       0
-                text7                               DCA      DCA        8      406       0
-                text6                               CAA      CAA       2C      406       0
-                text5                               C7E      C7E       2C      406       0
-                text4                               80C      80C      240      406       0
-                text3                               D90      D90        A      406       0
-                text2                               DC2      DC2        8      406       0
-                text1                               D86      D86        A      406       0
-                text0                               B6E      B6E       7C      406       0
+                text25                              D34      D34       20      406       0
+                text24                              A4C      A4C       96      406       0
+                text23                              DC8      DC8        A      406       0
+                text22                              DBE      DBE        A      406       0
+                text21                              D7E      D7E        E      406       0
+                text20                              D54      D54       16      406       0
+                text19                              E00      E00        4      406       0
+                text18                              DFA      DFA        6      406       0
+                text17                              DF2      DF2        8      406       0
+                text16                              DEA      DEA        8      406       0
+                text15                              BF0      BF0       52      406       0
+                text14                              C42      C42       42      406       0
+                text13                              DE2      DE2        8      406       0
+                text12                              DB4      DB4        A      406       0
+                text11                              DAA      DAA        A      406       0
+                text10                              D08      D08       2C      406       0
+                text9                               CDC      CDC       2C      406       0
+                text8                               DDA      DDA        8      406       0
+                text7                               CB0      CB0       2C      406       0
+                text6                               C84      C84       2C      406       0
+                text5                               80C      80C      240      406       0
+                text4                               DA0      DA0        A      406       0
+                text3                               DD2      DD2        8      406       0
+                text2                               D96      D96        A      406       0
+                text1                               D8C      D8C        A      406       0
+                text0                               B6E      B6E       82      406       0
                 cstackCOMRAM                          1        1       23        1       1
                 bssCOMRAM                            24       24        1        1       1
-                cinit                               D64      D64       14      406       0
+                cinit                               D6A      D6A       14      406       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -82,32 +83,33 @@ TOTAL           Name                               Link     Load   Length     Sp
                 intcode                               8        8        E         0
                 reset_vec                             0        0        4         0
                 intcode_body                        AE2      AE2       8C         0
-                text24                              D2E      D2E       20         0
-                text23                              A4C      A4C       96         0
-                text22                              DB8      DB8        A         0
-                text21                              DAE      DAE        A         0
-                text20                              D78      D78        E         0
-                text19                              D4E      D4E       16         0
-                text18                              DF0      DF0        4         0
-                text17                              DEA      DEA        6         0
-                text16                              DE2      DE2        8         0
-                text15                              DDA      DDA        8         0
-                text14                              BEA      BEA       52         0
-                text13                              C3C      C3C       42         0
-                text12                              DD2      DD2        8         0
-                text11                              DA4      DA4        A         0
-                text10                              D9A      D9A        A         0
-                text9                               D02      D02       2C         0
-                text8                               CD6      CD6       2C         0
-                text7                               DCA      DCA        8         0
-                text6                               CAA      CAA       2C         0
-                text5                               C7E      C7E       2C         0
-                text4                               80C      80C      240         0
-                text3                               D90      D90        A         0
-                text2                               DC2      DC2        8         0
-                text1                               D86      D86        A         0
-                text0                               B6E      B6E       7C         0
-                cinit                               D64      D64       14         0
+                text25                              D34      D34       20         0
+                text24                              A4C      A4C       96         0
+                text23                              DC8      DC8        A         0
+                text22                              DBE      DBE        A         0
+                text21                              D7E      D7E        E         0
+                text20                              D54      D54       16         0
+                text19                              E00      E00        4         0
+                text18                              DFA      DFA        6         0
+                text17                              DF2      DF2        8         0
+                text16                              DEA      DEA        8         0
+                text15                              BF0      BF0       52         0
+                text14                              C42      C42       42         0
+                text13                              DE2      DE2        8         0
+                text12                              DB4      DB4        A         0
+                text11                              DAA      DAA        A         0
+                text10                              D08      D08       2C         0
+                text9                               CDC      CDC       2C         0
+                text8                               DDA      DDA        8         0
+                text7                               CB0      CB0       2C         0
+                text6                               C84      C84       2C         0
+                text5                               80C      80C      240         0
+                text4                               DA0      DA0        A         0
+                text3                               DD2      DD2        8         0
+                text2                               D96      D96        A         0
+                text1                               D8C      D8C        A         0
+                text0                               B6E      B6E       82         0
+                cinit                               D6A      D6A       14         0
 
         CLASS   CONST          
 
@@ -163,7 +165,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 cstackCOMRAM                   000001  000025  000026         1       1  COMRAM  
                 intcode                        000008  000012  00001A         4       0  CODE    
                 smallconst                     000800  00000C  00080C       400       0  SMALLCON
-                text4                          00080C  0005E8  000DF4       406       0  CODE    
+                text5                          00080C  0005F8  000E04       406       0  CODE    
                 idloc                          200000  000008  200008    200000       0  IDLOC   
                 config                         300000  00000E  30000E    300000       0  CONFIG  
 
@@ -182,16 +184,16 @@ UNUSED ADDRESS RANGES
         BIGRAM           000026-0007FF              7DA
         CODE             000004-000007                4
                          00001A-0007FF              7E6
-                         000DF4-007FFF             720C
+                         000E04-007FFF             71FC
         COMRAM           000026-00005F               3A
         CONST            000004-000007                4
                          00001A-0007FF              7E6
-                         000DF4-007FFF             720C
+                         000E04-007FFF             71FC
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      000DF4-007FFF             720C
+        MEDIUMCONST      000E04-007FFF             71FC
         RAM              000060-0007FF              100
         SFR              000F60-000FFF               A0
-        SMALLCONST       000DF4-007FFF              100
+        SMALLCONST       000E04-007FFF              100
         STACK            000060-0007FF              7A0
 
                                   Symbol Table
@@ -346,6 +348,7 @@ __Htext21                   text21       000000
 __Htext22                   text22       000000
 __Htext23                   text23       000000
 __Htext24                   text24       000000
+__Htext25                   text25       000000
 __Htext3                    text3        000000
 __Htext4                    text4        000000
 __Htext5                    text5        000000
@@ -431,6 +434,7 @@ __Ltext21                   text21       000000
 __Ltext22                   text22       000000
 __Ltext23                   text23       000000
 __Ltext24                   text24       000000
+__Ltext25                   text25       000000
 __Ltext3                    text3        000000
 __Ltext4                    text4        000000
 __Ltext5                    text5        000000
@@ -443,12 +447,12 @@ __S1                        (abs)        000026
 __S2                        (abs)        000000
 ___inthi_sp                 stack        000000
 ___intlo_sp                 stack        000000
-___lwdiv                    text14       000BEA
+___lwdiv                    text15       000BF0
 ___lwdiv@counter            cstackCOMRAM 00001A
 ___lwdiv@dividend           cstackCOMRAM 000014
 ___lwdiv@divisor            cstackCOMRAM 000016
 ___lwdiv@quotient           cstackCOMRAM 000018
-___lwmod                    text13       000C3C
+___lwmod                    text14       000C42
 ___lwmod@counter            cstackCOMRAM 000013
 ___lwmod@dividend           cstackCOMRAM 00000F
 ___lwmod@divisor            cstackCOMRAM 000011
@@ -458,66 +462,68 @@ ___sp                       stack        000000
 __accesstop                 (abs)        000060
 __activetblptr              (abs)        000001
 __end_of_ISR                intcode_body 000B6E
-__end_of___lwdiv            text14       000C3C
-__end_of___lwmod            text13       000C7E
-__end_of__initialization    cinit        000D66
-__end_of_adcConfig          text24       000D4E
-__end_of_adcRead            text23       000AE2
-__end_of_configSevenSeg     text20       000D86
-__end_of_configTimer0       text19       000D64
-__end_of_desableTimer0ISR   text18       000DF4
-__end_of_enableTimer0ISR    text17       000DF0
-__end_of_main               text0        000BEA
-__end_of_output_highA       text12       000DDA
-__end_of_output_highC       text16       000DEA
-__end_of_output_highD       text15       000DE2
-__end_of_output_highE       text7        000DD2
-__end_of_output_lowA        text11       000DAE
-__end_of_output_lowE        text10       000DA4
-__end_of_printDigit1        text9        000D2E
-__end_of_printDigit2        text8        000D02
-__end_of_printDigit3        text6        000CD6
-__end_of_printDigit4        text5        000CAA
-__end_of_printDisplays      text4        000A4C
-__end_of_resetTimer0        text3        000D9A
-__end_of_setInputA          text2        000DCA
-__end_of_setOutputA         text22       000DC2
-__end_of_setOutputC         text1        000D90
-__end_of_setOutputE         text21       000DB8
+__end_of___lwdiv            text15       000C42
+__end_of___lwmod            text14       000C84
+__end_of__initialization    cinit        000D6C
+__end_of_adcConfig          text25       000D54
+__end_of_adcRead            text24       000AE2
+__end_of_configSevenSeg     text21       000D8C
+__end_of_configTimer0       text20       000D6A
+__end_of_desableTimer0ISR   text19       000E04
+__end_of_enableTimer0ISR    text18       000E00
+__end_of_main               text0        000BF0
+__end_of_output_highA       text13       000DEA
+__end_of_output_highC       text17       000DFA
+__end_of_output_highD       text16       000DF2
+__end_of_output_highE       text8        000DE2
+__end_of_output_lowA        text12       000DBE
+__end_of_output_lowE        text11       000DB4
+__end_of_printDigit1        text10       000D34
+__end_of_printDigit2        text9        000D08
+__end_of_printDigit3        text7        000CDC
+__end_of_printDigit4        text6        000CB0
+__end_of_printDisplays      text5        000A4C
+__end_of_resetTimer0        text4        000DAA
+__end_of_setInputA          text3        000DDA
+__end_of_setOutputA         text23       000DD2
+__end_of_setOutputC         text2        000DA0
+__end_of_setOutputD         text1        000D96
+__end_of_setOutputE         text22       000DC8
 __end_of_tabela             smallconst   00080B
-__initialization            cinit        000D64
+__initialization            cinit        000D6A
 __mediumconst               mediumconst  000000
 __pbssCOMRAM                bssCOMRAM    000024
-__pcinit                    cinit        000D64
+__pcinit                    cinit        000D6A
 __pcstackCOMRAM             cstackCOMRAM 000001
 __pintcode                  intcode      000008
 __pintcode_body             intcode_body 000AE2
 __psmallconst               smallconst   000800
 __ptext0                    text0        000B6E
-__ptext1                    text1        000D86
-__ptext10                   text10       000D9A
-__ptext11                   text11       000DA4
-__ptext12                   text12       000DD2
-__ptext13                   text13       000C3C
-__ptext14                   text14       000BEA
-__ptext15                   text15       000DDA
-__ptext16                   text16       000DE2
-__ptext17                   text17       000DEA
-__ptext18                   text18       000DF0
-__ptext19                   text19       000D4E
-__ptext2                    text2        000DC2
-__ptext20                   text20       000D78
-__ptext21                   text21       000DAE
-__ptext22                   text22       000DB8
-__ptext23                   text23       000A4C
-__ptext24                   text24       000D2E
-__ptext3                    text3        000D90
-__ptext4                    text4        00080C
-__ptext5                    text5        000C7E
-__ptext6                    text6        000CAA
-__ptext7                    text7        000DCA
-__ptext8                    text8        000CD6
-__ptext9                    text9        000D02
+__ptext1                    text1        000D8C
+__ptext10                   text10       000D08
+__ptext11                   text11       000DAA
+__ptext12                   text12       000DB4
+__ptext13                   text13       000DE2
+__ptext14                   text14       000C42
+__ptext15                   text15       000BF0
+__ptext16                   text16       000DEA
+__ptext17                   text17       000DF2
+__ptext18                   text18       000DFA
+__ptext19                   text19       000E00
+__ptext2                    text2        000D96
+__ptext20                   text20       000D54
+__ptext21                   text21       000D7E
+__ptext22                   text22       000DBE
+__ptext23                   text23       000DC8
+__ptext24                   text24       000A4C
+__ptext25                   text25       000D34
+__ptext3                    text3        000DD2
+__ptext4                    text4        000DA0
+__ptext5                    text5        00080C
+__ptext6                    text6        000C84
+__ptext7                    text7        000CB0
+__ptext8                    text8        000DDA
+__ptext9                    text9        000CDC
 __ramtop                    ramtop       000800
 __size_of_ISR               (abs)        000000
 __size_of___lwdiv           (abs)        000000
@@ -544,34 +550,36 @@ __size_of_resetTimer0       (abs)        000000
 __size_of_setInputA         (abs)        000000
 __size_of_setOutputA        (abs)        000000
 __size_of_setOutputC        (abs)        000000
+__size_of_setOutputD        (abs)        000000
 __size_of_setOutputE        (abs)        000000
 __smallconst                smallconst   000800
-_adcConfig                  text24       000D2E
-_adcRead                    text23       000A4C
-_configSevenSeg             text20       000D78
-_configTimer0               text19       000D4E
+_adcConfig                  text25       000D34
+_adcRead                    text24       000A4C
+_configSevenSeg             text21       000D7E
+_configTimer0               text20       000D54
 _contador                   bssCOMRAM    000024
-_desableTimer0ISR           text18       000DF0
-_enableTimer0ISR            text17       000DEA
+_desableTimer0ISR           text19       000E00
+_enableTimer0ISR            text18       000DFA
 _main                       text0        000B6E
-_output_highA               text12       000DD2
-_output_highC               text16       000DE2
-_output_highD               text15       000DDA
-_output_highE               text7        000DCA
-_output_lowA                text11       000DA4
-_output_lowE                text10       000D9A
-_printDigit1                text9        000D02
-_printDigit2                text8        000CD6
-_printDigit3                text6        000CAA
-_printDigit4                text5        000C7E
-_printDisplays              text4        00080C
-_printDisplays$799          cstackCOMRAM 000020
-_printDisplays$800          cstackCOMRAM 00001E
-_resetTimer0                text3        000D90
-_setInputA                  text2        000DC2
-_setOutputA                 text22       000DB8
-_setOutputC                 text1        000D86
-_setOutputE                 text21       000DAE
+_output_highA               text13       000DE2
+_output_highC               text17       000DF2
+_output_highD               text16       000DEA
+_output_highE               text8        000DDA
+_output_lowA                text12       000DB4
+_output_lowE                text11       000DAA
+_printDigit1                text10       000D08
+_printDigit2                text9        000CDC
+_printDigit3                text7        000CB0
+_printDigit4                text6        000C84
+_printDisplays              text5        00080C
+_printDisplays$800          cstackCOMRAM 000020
+_printDisplays$801          cstackCOMRAM 00001E
+_resetTimer0                text4        000DA0
+_setInputA                  text3        000DD2
+_setOutputA                 text23       000DC8
+_setOutputC                 text2        000D96
+_setOutputD                 text1        000D8C
+_setOutputE                 text22       000DBE
 _tabela                     smallconst   000801
 adcConfig@acqTime           cstackCOMRAM 00000F
 adcConfig@conversionRate    cstackCOMRAM 000011
@@ -581,7 +589,7 @@ adcRead@resultFormat        cstackCOMRAM 00000F
 adcRead@returnValue         cstackCOMRAM 000015
 btemp                       temp         000025
 configTimer0@prescalerValue cstackCOMRAM 00000F
-end_of_initialization       cinit        000D66
+end_of_initialization       cinit        000D6C
 int$flags                   temp         000025
 int_func                    intcode_body 000AE2
 intlevel0                   text         000000
@@ -603,11 +611,12 @@ printDisplays@valor         cstackCOMRAM 00001B
 setInputA@inputs            cstackCOMRAM 00000F
 setOutputA@outputs          cstackCOMRAM 00000F
 setOutputC@outputs          cstackCOMRAM 00000F
+setOutputD@outputs          cstackCOMRAM 00000F
 setOutputE@outputs          cstackCOMRAM 00000F
 stackhi                     (abs)        0007FF
 stacklo                     (abs)        000060
 start                       init         000016
-start_initialization        cinit        000D64
+start_initialization        cinit        000D6A
 
 
 FUNCTION INFORMATION:
@@ -620,7 +629,7 @@ FUNCTION INFORMATION:
  Auto vars:     Size  Location     Type
   valor           2   33[COMRAM] unsigned int 
  Return value:  Size  Location     Type
-                  2  202[None  ] int 
+                  2  204[None  ] int 
  Registers used:
 		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
@@ -647,8 +656,39 @@ Total ram usage:        2 bytes
 		_resetTimer0
 		_setInputA
 		_setOutputC
+		_setOutputD
  This function is called by:
 		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _setOutputD *****************
+ Defined at:
+		line 24 in file "../../Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c"
+ Parameters:    Size  Location     Type
+  outputs         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  outputs         1   14[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
  This function uses a non-reentrant model
 
 
@@ -1435,62 +1475,63 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
-		___lwdiv       		CODE           	0BEA	0000	83
+		___lwdiv       		CODE           	0BF0	0000	83
 
 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c estimated size: 83
 
 sevenSeg.c
-		_printDigit1   		CODE           	0D02	0000	45
-		_printDigit2   		CODE           	0CD6	0000	45
-		_printDigit3   		CODE           	0CAA	0000	45
-		_printDigit4   		CODE           	0C7E	0000	45
+		_printDigit1   		CODE           	0D08	0000	45
+		_printDigit2   		CODE           	0CDC	0000	45
+		_printDigit3   		CODE           	0CB0	0000	45
+		_printDigit4   		CODE           	0C84	0000	45
 		_printDisplays 		CODE           	080C	0000	577
-		_configSevenSeg		CODE           	0D78	0000	15
+		_configSevenSeg		CODE           	0D7E	0000	15
 
 sevenSeg.c estimated size: 772
 
 shared
 		_tabela        		SMALLCONST     	0801	0000	11
-		__initialization		CODE           	0D64	0000	3
+		__initialization		CODE           	0D6A	0000	3
 
 shared estimated size: 14
 
 ../../Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c
-		_setOutputA    		CODE           	0DB8	0000	11
-		_setOutputC    		CODE           	0D86	0000	11
-		_setOutputE    		CODE           	0DAE	0000	11
-		_setInputA     		CODE           	0DC2	0000	9
-		_output_lowA   		CODE           	0DA4	0000	11
-		_output_lowE   		CODE           	0D9A	0000	11
-		_output_highA  		CODE           	0DD2	0000	9
-		_output_highC  		CODE           	0DE2	0000	9
-		_output_highD  		CODE           	0DDA	0000	9
-		_output_highE  		CODE           	0DCA	0000	9
+		_setOutputA    		CODE           	0DC8	0000	11
+		_setOutputC    		CODE           	0D96	0000	11
+		_setOutputD    		CODE           	0D8C	0000	11
+		_setOutputE    		CODE           	0DBE	0000	11
+		_setInputA     		CODE           	0DD2	0000	9
+		_output_lowA   		CODE           	0DB4	0000	11
+		_output_lowE   		CODE           	0DAA	0000	11
+		_output_highA  		CODE           	0DE2	0000	9
+		_output_highC  		CODE           	0DF2	0000	9
+		_output_highD  		CODE           	0DEA	0000	9
+		_output_highE  		CODE           	0DDA	0000	9
 
-../../Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c estimated size: 100
+../../Downloads/minicurso-pic-master/dia03/desafio_adc/configIO.c estimated size: 111
 
 ../../Downloads/minicurso-pic-master/dia03/desafio_adc/timer0lib.c
-		_resetTimer0   		CODE           	0D90	0000	11
-		_configTimer0  		CODE           	0D4E	0000	23
-		_enableTimer0ISR		CODE           	0DEA	0000	7
-		_desableTimer0ISR		CODE           	0DF0	0000	5
+		_resetTimer0   		CODE           	0DA0	0000	11
+		_configTimer0  		CODE           	0D54	0000	23
+		_enableTimer0ISR		CODE           	0DFA	0000	7
+		_desableTimer0ISR		CODE           	0E00	0000	5
 
 ../../Downloads/minicurso-pic-master/dia03/desafio_adc/timer0lib.c estimated size: 46
 
 main.c
 		_ISR           		CODE           	0008	0000	155
-		_main          		CODE           	0B6E	0000	125
+		_main          		CODE           	0B6E	0000	131
 
-main.c estimated size: 280
+main.c estimated size: 286
 
 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
-		___lwmod       		CODE           	0C3C	0000	67
+		___lwmod       		CODE           	0C42	0000	67
 
 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c estimated size: 67
 
 ../../Downloads/minicurso-pic-master/dia03/desafio_adc/adclib.c
 		_adcRead       		CODE           	0A4C	0000	151
-		_adcConfig     		CODE           	0D2E	0000	33
+		_adcConfig     		CODE           	0D34	0000	33
 
 ../../Downloads/minicurso-pic-master/dia03/desafio_adc/adclib.c estimated size: 184
 
